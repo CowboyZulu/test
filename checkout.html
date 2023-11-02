@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | SewBox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">SewBox</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Checkout</h2>
+        <section class="payment-methods">
+            <h3>Select Payment Method</h3>
+            <div class="payment-option">
+                <input type="radio" name="payment-method" id="credit-card" checked>
+                <label for="credit-card">Credit Card</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" name="payment-method" id="paypal">
+                <label for="paypal">PayPal</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" name="payment-method" id="bank-transfer">
+                <label for="bank-transfer">Bank Transfer</label>
+            </div>
+            <div class="payment-option">
+                <input type="radio" name="payment-method" id="pay-delivery">
+                <label for="pay-delivery">Pay Upon Delivery</label>
+            </div>
+        </section>
+
+        <section id="credit-card-details" class="payment-details">
+            <h3>Credit Card Details</h3>
+            <form>
+                <input type="text" placeholder="Cardholder Name">
+                <input type="text" placeholder="Card Number">
+                <input type="text" placeholder="Expiration Date (MM/YY)">
+                <input type="text" placeholder="CVV">
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+
+        <section id="pay-delivery-details" class="payment-details">
+            <h3>Pay Upon Delivery</h3>
+            <p>Please ensure you have the exact amount upon delivery. The delivery agent might not have change. For your
+                safety, our delivery agents carry minimal cash and cannot provide change for large amounts.</p>
+            <button type="button">Confirm Order</button>
+        </section>
+
+        <div class="finalize-checkout">
+            <button type="button" onclick="location.href='confirmation.html'">Finalize Order</button>
+        </div>
+
+        <!-- Add additional sections for other payment methods if needed -->
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2023 SewBox</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

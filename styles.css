@@ -1,0 +1,345 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1 0 auto;
+    /* This will make the main content grow to fill the available space */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav li a:hover {
+    background-color: #e9e9e9;
+}
+
+.featured-products {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ... previous styles ... */
+
+.product-listing {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product a:hover {
+    background-color: #555;
+}
+
+/* ... existing styles ... */
+
+.description {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+/* If you don't want the default button outline (for focus), you can remove it, but make sure to provide an alternative focus style for accessibility. */
+.add-to-cart:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(51, 51, 51, 0.5);
+    /* Example focus style */
+}
+
+/* ... Your existing styles ... */
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table,
+#cart-table th,
+#cart-table td {
+    border: 1px solid #ddd;
+}
+
+#cart-table th,
+#cart-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+#cart-table img {
+    width: 80px;
+    height: 80px;
+}
+
+.checkout {
+    text-align: right;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.payment-option {
+    margin-bottom: 10px;
+}
+
+.payment-details {
+    display: none;
+    /* Initially hide all details, JS will handle showing them */
+    margin-top: 20px;
+}
+
+.payment-details h3 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.payment-details form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+button[type="button"],
+button[type="submit"] {
+    background-color: #333;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="button"]:hover,
+button[type="submit"]:hover {
+    background-color: #555;
+}
+
+.order-review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.finalize-checkout {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* ... (existing styles) ... */
+
+.cart-items table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.cart-items th,
+.cart-items td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-items th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.cart-items img {
+    width: 60px;
+    /* Adjust as needed */
+    height: auto;
+    margin-right: 10px;
+}
+
+.cart-total {
+    font-weight: bold;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+.checkout-btn {
+    display: block;
+    text-align: right;
+}
+
+footer {
+    background-color: #333;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    text-align: center;
+    
+}
+
+/* ... Existing styles ... */
+
+header nav ul li .active {
+    font-weight: bold;
+    color: #0066c0;
+}
+
+.account-overview {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.account-section {
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.account-section h3 {
+    margin-top: 0;
+}
+
+.account-section a {
+    color: #0066c0;
+    text-decoration: none;
+    font-weight: bold;
+}
